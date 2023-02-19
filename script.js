@@ -1,8 +1,6 @@
-let operation, result, number1, number2;
+let operation, result;
 for (;;) {
     operation = prompt("Choose one of these operations: add, sub, mult, div", 'add');
-    number1 = prompt("Input number 1");
-    number2 = prompt("Input number 2");
     if (
         operation === "add" ||
         operation === "sub" ||
@@ -10,10 +8,12 @@ for (;;) {
         operation === "div"
     )
         break;
+    else (alert("You entered wrong operation! Please choose one of these operations: add, sub, mult, div"))
 }
-
-num1 = Number(number1)
-num2 = Number(number2)
+let number1 = prompt("Input number 1");
+let number2 = prompt("Input number 2");
+const num1 = Number(number1);
+const num2 = Number(number2);
 
 switch (operation) {
     case "add":
